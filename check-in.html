@@ -21,15 +21,11 @@
             <h1>Check-in</h1>
             
             <form class="input-group">
-                <input type="text" placeholder="Ingrese su ID de usuario" class="user-input">
-                <button type="submit" class="submit-btn" onclick="iniciarCheckIn()">Ir</button>
+                <input type="text" id="input-id" placeholder="Ingrese su ID de usuario" class="user-input">
+                <button type="button" class="submit-btn" onclick="iniciarCheckIn()">Ir</button>
             </form>
 
-            <div class="status-box">
-                <p>"Iniciando validaciones..."</p>
-                <p>"Pasaporte verificado"</p>
-                <p class="error">"Error: El ID de pasaporte es inválido"</p>
-            </div>
+            <div id="logs-box" class="status-box"></div>
         </section>
     </main>
 
