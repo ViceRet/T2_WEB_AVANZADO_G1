@@ -7,7 +7,7 @@ const iniciarCheckIn = () => {
     logsBox.style.visibility = 'visible';
     logsBox.innerHTML = `<p>ID ingresado: ${pasajeroId}</p><p>Iniciando Validaciones...</p>`;
 
-    Promise.all([validarPasaporte(pasajeroId)]) // Agregar verificarRestriccionesVisa al arreglo
+    Promise.all([validarPasaporte(pasajeroId), verificarRestriccionesVisa(pasajeroId)])
     .then((msgs) => {
         logsBox.innerHTML = "";
         msgs.forEach((msg) => { // Se agregan los mensajes de éxito al log box
