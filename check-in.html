@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AsyncAir Check-in</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="./checkIn.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="styles/img/plane.png" alt="AsyncAir Logo" class="logo" >
+            <span class="brand-name">AsyncAir</span>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="checkin-container">
+            <h1>Check-in</h1>
+            
+            <form class="input-group">
+                <input type="text" placeholder="Ingrese su ID de usuario" class="user-input">
+                <button type="submit" class="submit-btn" onclick="iniciarCheckIn()">Ir</button>
+            </form>
+
+            <div class="status-box">
+                <p>"Iniciando validaciones..."</p>
+                <p>"Pasaporte verificado"</p>
+                <p class="error">"Error: El ID de pasaporte es inválido"</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
